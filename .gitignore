@@ -1,0 +1,9 @@
+/tmp/*
+/log/*
+/db/*.sqlite3*
+/.bundle
+/vendor/bundle
+*.swp
+*~
+tmp/**/*
+/vendor/plugins/rails_upgrade
