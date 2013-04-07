@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title><%= @pagetitle || @page.title %></title>
+    <title><%= @pagetitle || (@page && @page.title) || 'Learn30' %></title>
 		<%= stylesheet_link_tag 'learningrails' %>
   </head>
   <body>
@@ -20,7 +20,8 @@
 				</ul>
 		  <div>
 		</div>
-		<div id='content'>
+      <div id='content'>
+         <h2><%= flash[:notice] %></h2>
       <%= yield %>
 		</div>
 		<div id='footer'>
