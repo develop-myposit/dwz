@@ -1,5 +1,11 @@
 Learn30::Application.routes.draw do
+
+  authenticated :user do
+     root :to => "viewer#show", :defaults => { :name => "home"}
+  end
   root :to => "viewer#show", :defaults => { :name => "home"}
+  devise_for :users
+
   resources :pages
   match ':name' => 'viewer#show', :as => :view_page
 

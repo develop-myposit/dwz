@@ -7,3 +7,6 @@
 *~
 tmp/**/*
 /vendor/plugins/rails_upgrade
+
+# Ignore application configuration
+/config/application.yml

@@ -1,31 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title><%= @pagetitle || (@page && @page.title) || 'Learn30' %></title>
-		<%= stylesheet_link_tag 'learningrails' %>
+    <meta name="title" content="Learn30 Test Application" />
+    <meta name="description" content="Sample Rails Application" />
+    <meta name="author" content="Paul Hahn" />
+
+    <%= stylesheet_link_tag 'reset' %>
+    <%= stylesheet_link_tag 'learningrails' %>
   </head>
   <body>
-		<div id='pagewrapper'>
-			<div id='header'>
-				<p>Learning Rails Sample Application</p>
-		  </div>
-			<div id='navbar'>
+  <%= render 'layouts/navigation' %>
+  <br />
+
+  <div id='pagewrapper'>
+         <header>
+			<p>Learning Rails Sample Application</p>
+         <nav>
 				<ul>
-				<li><%= link_to 'Home', view_page_path('home') %></li>
-				<li><%= link_to 'Resources',view_page_path('resources')  %></li>
-			    <li><%= link_to 'About Us', view_page_path('about') %></li>
-                <li><%= link_to 'Contact Us', view_page_path('contact') %></li>
+				  <li><%= link_to 'Home', view_page_path('home') %></li>
+				  <li><%= link_to 'Resources',view_page_path('resources')  %></li>
+			     <li><%= link_to 'About Us', view_page_path('about') %></li>
+              <li><%= link_to 'Contact Us', view_page_path('contact') %></li>
 				</ul>
-		  <div>
-		</div>
+         </nav>
+		</header>
       <div id='content'>
-         <h2><%= flash[:notice] %></h2>
+      <%= render 'layouts/messages' %>
       <%= yield %>
 		</div>
-		<div id='footer'>
+		<footer>
 			<p>Learning Rails Sample Application</p>
-		</div>
+      </footer>
   </body>
 </html>
