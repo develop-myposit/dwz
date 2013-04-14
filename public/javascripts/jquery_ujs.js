@@ -12,7 +12,12 @@
 
   // Cut down on the number if issues from people inadvertently including jquery_ujs twice
   // by detecting and raising an error when it happens.
-  if ( $.rails !== undefined ) {
+  var alreadyInitialized = function() {
+    var events = $._data(document, 'events');
+    return events && events.click && $.grep(events.click, function(e) { return e.namespace === 'rails'; }).length;
+  }
+
+  if ( alreadyInitialized() ) {
     $.error('jquery-ujs has already been loaded!');
   }
 
@@ -276,7 +281,9 @@
     enableElement: function(element) {
       if (element.data('ujs:enable-with') !== undefined) {
         element.html(element.data('ujs:enable-with')); // set to old enabled state
-        element.removeData('ujs:enable-with'); // clean up cache
+        // this should be element.removeData('ujs:enable-with')
+        // but, there is currently a bug in jquery which makes hyphenated data attributes not get removed
+        element.data('ujs:enable-with', false); // clean up cache
       }
       element.unbind('click.railsDisable'); // enable element
     }

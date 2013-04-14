@@ -3,12 +3,18 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.20'
 gem 'devise'
 gem 'figaro'
+gem 'jquery-rails', '~> 2.1'
 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
+group :development do
+   gem "better_errors"
+   gem "binding_of_caller"
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'

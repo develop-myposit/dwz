@@ -4,6 +4,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
 }
 #pagewrapper {
     margin: 10px auto;
@@ -77,29 +78,23 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* #log_nav ul {
-   list-style: none;
-   color: white;
+ul#log_nav {
+   padding-right: 2em;
+   color: #2e2155;
+   list-style-type: none;
    margin: 0 0 2em;
-   padding: 0;
-}
-
-#log_nav ul li {
-   display: inline;
-   color: white;
    float: right;
    font-family: helvetica, arial, sans-serif;
-} */
+}
+
+ul#log_nav li {
+   text-decoration: none;
+   display: inline;
+}
 
 ul#log_nav li a {
-   list-style: none;
-   color: #2E3155;
-   display: inline-block;
-   vertical-align: top;
    text-decoration: none;
-   float: right;
-   padding-right: 2em;
-   background-color: white;
+   display: inline;
 }
 
 #flash_notice {
@@ -110,4 +105,29 @@ ul#log_nav li a {
 #flash_alert {
    background-color: #FCC;
    border: solid 1px #C66;
+}
+#hor-minimalist-a
+{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  background: #fff;
+  margin: 45px;
+  width: 800px;
+  border-collapse: collapse;
+  text-align: left;
+}
+#hor-minimalist-a th
+{
+  font-weight: normal;
+  color: #039;
+  padding: 10px 8px;
+  border-bottom: 2px solid #6678b1;
+}
+#hor-minimalist-a td
+{
+  color: #669;
+  padding: 9px 8px 0px 8px;
+}
+#hor-minimalist-a tbody tr:hover td
+{
+  color: #009;
 }

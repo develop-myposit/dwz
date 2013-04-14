@@ -1,7 +1,27 @@
-<ul>
-  <% @users.each do |user| %>
-    <li>
-      <%= link_to user.name, user %> signed up <%= user.created_at.to_date %>
-    </li>
-  <% end %>
-</ul>
+<h2>All Users</h2>
+
+<table id="hor-minimalist-a" cellspacing="0" cellpadding="0">
+     <thead>
+        <tr>
+            <th>User name<th>
+            <th>Email</th>
+            <th></th>
+		  <th></th>
+        </tr>
+     </thead>
+     <tbody>
+        <% for user in @users %>
+        <tr>
+         	<td><%=h user.name %></td>
+         	<td><%=h user.email %></td>
+         	<td><%= link_to 'Show', user %></td>
+			<td><%= link_to "Edit", edit_user_registration_path(user) %></td>
+            <td><%= link_to "Delete", user, :method => :delete, :confirm => "Are you sure you want to delete #{user.email}?" %></td>
+        </tr>
+     <% end %>
+    </tbody>
+</table>
+
+<br />
+
+<p><%= link_to 'New User', new_user_registration_path %>
