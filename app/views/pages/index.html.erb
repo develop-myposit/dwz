@@ -5,7 +5,8 @@
     <th>Name</th>
     <th>Title</th>
     <th>Admin?</th>
-    <th></th>
+    <th>Body</th>
+    <th>Admin?</th>
     <th></th>
     <th></th>
   </tr>
@@ -14,6 +15,7 @@
   <tr>
     <td><%= page.name %></td>
     <td><%= page.title %></td>
+    <td><%= page.body %></td>
     <td><%= page.admin? ? "TRUE" : "FALSE" %>
     <td><%= link_to 'Show', page %></td>
     <td><%= link_to 'Edit', edit_page_path(page) %></td>
