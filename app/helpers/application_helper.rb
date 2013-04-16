@@ -1,5 +1,5 @@
 module ApplicationHelper
-   def markdown(text)
+   def dmarkdown(text)
    	options ={ :hard_wrap => true,
    	           :autolink => true,
    	           :no_intra_emphasis => true,

@@ -4,10 +4,7 @@ gem 'rails', '3.0.20'
 gem 'devise'
 gem 'figaro'
 gem 'jquery-rails', '~> 2.1'
-gem 'redcarpet'
-
-
-
+gem 'redcarpet', '~> 2.2.2'
 gem 'sqlite3'
 
 group :development do

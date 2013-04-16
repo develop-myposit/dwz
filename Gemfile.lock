@@ -102,5 +102,5 @@ DEPENDENCIES
   figaro
   jquery-rails (~> 2.1)
   rails (= 3.0.20)
-  redcarpet
+  redcarpet (~> 2.2.2)
   sqlite3
