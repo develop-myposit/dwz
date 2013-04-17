@@ -1,5 +1,5 @@
-/tmp/*
-/log/*
+/tmp/**/*
+/log/*.pid
 /db/*.sqlite3*
 /.bundle
 /vendor/bundle
@@ -7,6 +7,6 @@
 *~
 tmp/**/*
 /vendor/plugins/rails_upgrade
-
+.sass-cache/
 # Ignore application configuration
 /config/application.yml
