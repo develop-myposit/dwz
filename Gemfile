@@ -6,6 +6,7 @@ gem 'figaro'
 gem 'jquery-rails', '~> 2.1'
 gem 'redcarpet', '~> 2.2.2'
 gem 'sqlite3'
+gem 'best_in_place'
 
 group :development do
    gem "better_errors"

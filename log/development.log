@@ -12968,3 +12968,2040 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 10:34:27 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 12:53:26 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (21.4ms)
+Compiled application.js  (12ms)  (pid 17906)
+Compiled jquery.purr.js  (0ms)  (pid 17906)
+Compiled best_in_place.js  (2ms)  (pid 17906)
+Compiled users.js  (701ms)  (pid 17906)
+Rendered layouts/_navigation.html.erb (5.0ms)
+  [1m[35mPage Load (2.0ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'
+Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 1655ms (Views: 1262.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /users.js - 200 OK (44ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /jquery.purr.js - 200 OK (42ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /learningrails.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /best_in_place.js - 200 OK (45ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /application.js - 200 OK (43ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:29 -0700
+Served asset /reset.css - 304 Not Modified (9ms)
+
+
+Started GET "/goo/users/login" for 127.0.0.1 at 2013-04-17 12:53:33 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (3.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (15.7ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'[0m
+Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 169ms (Views: 83.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:34 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:34 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:34 -0700
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started POST "/goo/users/login" for 127.0.0.1 at 2013-04-17 12:53:42 -0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA=", "user"=>{"email"=>"admin@cairnbrain.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@cairnbrain.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-17 17:31:30.919970', "current_sign_in_at" = '2013-04-17 19:53:43.652724', "sign_in_count" = 32, "updated_at" = '2013-04-17 19:53:43.654760' WHERE "users"."id" = 1[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" 
+Redirected to http://localhost:3000/
+Completed 302 Found in 1142ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 12:53:44 -0700
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (0.3ms)
+Rendered layouts/_navigation.html.erb (1.8ms)
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 30.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:44 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:44 -0700
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:44 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-04-17 12:53:48 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"admin"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."name" = 'admin' LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (0.3ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 255ms (Views: 37.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:49 -0700
+Served asset /reset.css - 304 Not Modified (55ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:49 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:49 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-17 12:53:51 -0700
+  Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+Rendered pages/index.html.erb within layouts/application (112.6ms)
+Rendered layouts/_navigation.html.erb (1.3ms)
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 286ms (Views: 170.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:51 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:51 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:53:51 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:53:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2013-04-17 12:53:57 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.8ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_pages_show_html_erb__214559197088983188_29183940 RAISED /home/paul/learn30/app/views/pages/show.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+...best_in_place @page, :body type: :textarea );@output_buffer....
+...                               ^
+Function body:           def _app_views_pages_show_html_erb__214559197088983188_29183940(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "pages/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <b>Name:</b>
+  ');@output_buffer.append= ( best_in_place @page, :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <b>Title:</b>
+  ');@output_buffer.append= ( best_in_place @page, :title );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <b>Body:</b>
+  ');@output_buffer.append= ( best_in_place @page, :body type: :textarea );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+	<b>Administrator:</b>
+	');@output_buffer.append= ( best_in_place @page, :admin, type: :checkbox, collection: %w[FALSE TRUE] );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+<br />
+
+');@output_buffer.append= ( link_to 'Edit', edit_page_path(@page) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', pages_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/template.rb:282:in `module_eval'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/template.rb:282:in `compile'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/template.rb:190:in `compile!'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/template.rb:143:in `block in render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/notifications.rb:55:in `instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/template.rb:142:in `render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/notifications.rb:53:in `instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/abstract_controller/rendering.rb:99:in `render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activerecord-3.1.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/mime_responds.rb:195:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+/home/paul/learn30/app/controllers/pages_controller.rb:26:in `show'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/callbacks.rb:443:in `_run__4091826864347021006__process_action__2553453950081592154__callbacks'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/notifications.rb:53:in `instrument'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activerecord-3.1.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/abstract_controller/base.rb:121:in `process'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal.rb:193:in `dispatch'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_controller/metal.rb:236:in `block in action'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/routing/route_set.rb:71:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/routing/route_set.rb:71:in `dispatch'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/routing/route_set.rb:35:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `optimized_each'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/routing/route_set.rb:538:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/better_errors-0.8.0/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/better_errors-0.8.0/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/better_errors-0.8.0/lib/better_errors/middleware.rb:56:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/etag.rb:23:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/conditionalget.rb:25:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/session/abstract/id.rb:195:in `context'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/session/abstract/id.rb:190:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activerecord-3.1.12/lib/active_record/query_cache.rb:64:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activerecord-3.1.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/sendfile.rb:101:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/railties-3.1.12/lib/rails/rack/logger.rb:13:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/methodoverride.rb:24:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/runtime.rb:17:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/activesupport-3.1.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/lock.rb:15:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/actionpack-3.1.12/lib/action_dispatch/middleware/static.rb:61:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/railties-3.1.12/lib/rails/engine.rb:456:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/railties-3.1.12/lib/rails/application.rb:143:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/content_length.rb:14:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/railties-3.1.12/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/gems/1.9.1/gems/rack-1.3.10/lib/rack/handler/webrick.rb:59:in `service'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered pages/show.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 149ms
+
+SyntaxError - /home/paul/learn30/app/views/pages/show.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+...best_in_place @page, :body type: :textarea );@output_buffer....
+...                               ^:
+  app/views/pages/show.html.erb:15:in `'
+  (gem) actionpack-3.1.12/lib/action_view/template.rb:282:in `compile'
+  (gem) actionpack-3.1.12/lib/action_view/template.rb:190:in `compile!'
+  (gem) actionpack-3.1.12/lib/action_view/template.rb:143:in `block in render'
+  (gem) activesupport-3.1.12/lib/active_support/notifications.rb:55:in `instrument'
+  (gem) actionpack-3.1.12/lib/action_view/template.rb:142:in `render'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+  (gem) activesupport-3.1.12/lib/active_support/notifications.rb:53:in `block in instrument'
+  (gem) activesupport-3.1.12/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  (gem) activesupport-3.1.12/lib/active_support/notifications.rb:53:in `instrument'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/template_renderer.rb:9:in `render'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+  (gem) actionpack-3.1.12/lib/action_view/renderer/renderer.rb:17:in `render'
+  (gem) actionpack-3.1.12/lib/abstract_controller/rendering.rb:120:in `_render_template'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+  (gem) actionpack-3.1.12/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+  (gem) actionpack-3.1.12/lib/abstract_controller/rendering.rb:99:in `render'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/rendering.rb:16:in `render'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  (gem) activesupport-3.1.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+  (gem) activesupport-3.1.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+  (gem) activerecord-3.1.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+  app/controllers/pages_controller.rb:26:in `show'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  (gem) actionpack-3.1.12/lib/abstract_controller/base.rb:167:in `process_action'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  (gem) actionpack-3.1.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  (gem) activesupport-3.1.12/lib/active_support/callbacks.rb:443:in `_run__4091826864347021006__process_action__2553453950081592154__callbacks'
+  (gem) activesupport-3.1.12/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+  (gem) activesupport-3.1.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.1.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/rescue.rb:17:in `process_action'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  (gem) activesupport-3.1.12/lib/active_support/notifications.rb:53:in `block in instrument'
+  (gem) activesupport-3.1.12/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  (gem) activesupport-3.1.12/lib/active_support/notifications.rb:53:in `instrument'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+  (gem) activerecord-3.1.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  (gem) actionpack-3.1.12/lib/abstract_controller/base.rb:121:in `process'
+  (gem) actionpack-3.1.12/lib/abstract_controller/rendering.rb:45:in `process'
+  (gem) actionpack-3.1.12/lib/action_controller/metal.rb:193:in `dispatch'
+  (gem) actionpack-3.1.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  (gem) actionpack-3.1.12/lib/action_controller/metal.rb:236:in `block in action'
+  (gem) actionpack-3.1.12/lib/action_dispatch/routing/route_set.rb:71:in `dispatch'
+  (gem) actionpack-3.1.12/lib/action_dispatch/routing/route_set.rb:35:in `call'
+  (gem) rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+  (gem) rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  (gem) rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `optimized_each'
+  (gem) rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+  (gem) rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/routing/route_set.rb:538:in `call'
+  (gem) better_errors-0.8.0/lib/better_errors/middleware.rb:84:in `protected_app_call'
+  (gem) better_errors-0.8.0/lib/better_errors/middleware.rb:79:in `better_errors_call'
+  (gem) better_errors-0.8.0/lib/better_errors/middleware.rb:56:in `call'
+  (gem) warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+  (gem) warden-1.2.1/lib/warden/manager.rb:34:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  (gem) rack-1.3.10/lib/rack/etag.rb:23:in `call'
+  (gem) rack-1.3.10/lib/rack/conditionalget.rb:25:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/flash.rb:243:in `call'
+  (gem) rack-1.3.10/lib/rack/session/abstract/id.rb:195:in `context'
+  (gem) rack-1.3.10/lib/rack/session/abstract/id.rb:190:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+  (gem) activerecord-3.1.12/lib/active_record/query_cache.rb:64:in `call'
+  (gem) activerecord-3.1.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  (gem) activesupport-3.1.12/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+  (gem) activesupport-3.1.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+  (gem) rack-1.3.10/lib/rack/sendfile.rb:101:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+  (gem) railties-3.1.12/lib/rails/rack/logger.rb:13:in `call'
+  (gem) rack-1.3.10/lib/rack/methodoverride.rb:24:in `call'
+  (gem) rack-1.3.10/lib/rack/runtime.rb:17:in `call'
+  (gem) activesupport-3.1.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  (gem) rack-1.3.10/lib/rack/lock.rb:15:in `call'
+  (gem) actionpack-3.1.12/lib/action_dispatch/middleware/static.rb:61:in `call'
+  (gem) railties-3.1.12/lib/rails/engine.rb:456:in `call'
+  (gem) railties-3.1.12/lib/rails/application.rb:143:in `call'
+  (gem) rack-1.3.10/lib/rack/content_length.rb:14:in `call'
+  (gem) railties-3.1.12/lib/rails/rack/log_tailer.rb:14:in `call'
+  (gem) rack-1.3.10/lib/rack/handler/webrick.rb:59:in `service'
+  /home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/paul/.rbenv/versions/1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+Started POST "/__better_errors/26894100/variables" for 127.0.0.1 at 2013-04-17 12:53:58 -0700
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered pages/show.html.erb within layouts/application (26.1ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 295ms (Views: 77.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /users.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:25 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started PUT "/pages/1" for 127.0.0.1 at 2013-04-17 12:55:44 -0700
+  Processing by PagesController#update as JSON
+  Parameters: {"page"=>{"body"=>"# Welcome to our home page - Heading 1\n\n##Sample H2\n\n* one\n* two\n* three"}, "authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA=", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.5ms)[0m  [1mUPDATE "pages" SET "body" = '# Welcome to our home page - Heading 1
+
+##Sample H2
+
+* one
+* two
+* three', "updated_at" = '2013-04-17 19:55:44.704992' WHERE "pages"."id" = 1[0m
+Completed 204 No Content in 363ms
+
+
+Started PUT "/pages/1" for 127.0.0.1 at 2013-04-17 12:55:46 -0700
+  Processing by PagesController#update as JSON
+  Parameters: {"page"=>{"admin"=>"true"}, "authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA=", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.4ms)[0m  [1mUPDATE "pages" SET "admin" = 't', "updated_at" = '2013-04-17 19:55:46.358934' WHERE "pages"."id" = 1[0m
+Completed 204 No Content in 420ms
+
+
+Started PUT "/pages/1" for 127.0.0.1 at 2013-04-17 12:55:48 -0700
+  Processing by PagesController#update as JSON
+  Parameters: {"page"=>{"admin"=>"false"}, "authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA=", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.5ms)[0m  [1mUPDATE "pages" SET "admin" = 'f', "updated_at" = '2013-04-17 19:55:49.046250' WHERE "pages"."id" = 1[0m
+Completed 204 No Content in 303ms
+
+
+Started PUT "/pages/1" for 127.0.0.1 at 2013-04-17 12:55:54 -0700
+  Processing by PagesController#update as JSON
+  Parameters: {"page"=>{"admin"=>"true"}, "authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA=", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.5ms)[0m  [1mUPDATE "pages" SET "admin" = 't', "updated_at" = '2013-04-17 19:55:55.215395' WHERE "pages"."id" = 1[0m
+Completed 204 No Content in 282ms
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-17 12:55:57 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (2.7ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "pages".* FROM "pages" 
+Rendered pages/index.html.erb within layouts/application (27.1ms)
+Rendered layouts/_navigation.html.erb (1.1ms)
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 285ms (Views: 58.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:55:57 -0700
+Served asset /reset.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:55:57 -0700
+Served asset /learningrails.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:55:57 -0700
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:57 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:57 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 12:55:58 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/1/edit" for 127.0.0.1 at 2013-04-17 12:56:04 -0700
+  Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.8ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered pages/_form.html.erb (34.9ms)
+Rendered pages/edit.html.erb within layouts/application (41.0ms)
+Rendered layouts/_navigation.html.erb (1.1ms)
+Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 275ms (Views: 69.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /reset.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:05 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started PUT "/pages/1" for 127.0.0.1 at 2013-04-17 12:56:09 -0700
+  Processing by PagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA=", "page"=>{"name"=>"home", "title"=>"Home", "body"=>"# Welcome to our home page - Heading 1\r\n\r\n##Sample H2\r\n\r\n* one\r\n* two\r\n* three", "admin"=>"0"}, "commit"=>"Update Page", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.4ms)[0m  [1mUPDATE "pages" SET "body" = '# Welcome to our home page - Heading 1
+
+##Sample H2
+
+* one
+* two
+* three', "admin" = 'f', "updated_at" = '2013-04-17 19:56:10.115034' WHERE "pages"."id" = 1[0m
+Redirected to http://localhost:3000/pages/1
+Completed 302 Found in 391ms
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered pages/show.html.erb within layouts/application (20.8ms)
+Rendered layouts/_navigation.html.erb (1.2ms)
+Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 251ms (Views: 56.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+  Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (91.8ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+Rendered pages/index.html.erb within layouts/application (32.3ms)
+Rendered layouts/_navigation.html.erb (1.3ms)
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 265ms (Views: 62.8ms | ActiveRecord: 95.6ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /best_in_place.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 12:56:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-17 13:00:31 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" 
+Rendered pages/index.html.erb within layouts/application (26.6ms)
+Rendered layouts/_navigation.html.erb (1.0ms)
+Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 273ms (Views: 57.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /learningrails.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2013-04-17 13:00:41 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered pages/show.html.erb within layouts/application (24.8ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 269ms (Views: 55.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:00:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/pages/1" for 127.0.0.1 at 2013-04-17 13:00:44 -0700
+  Processing by PagesController#update as JSON
+  Parameters: {"page"=>{"admin"=>"true"}, "authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA=", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.4ms)[0m  [1mUPDATE "pages" SET "admin" = 't', "updated_at" = '2013-04-17 20:00:44.597599' WHERE "pages"."id" = 1[0m
+Completed 204 No Content in 424ms
+
+
+Started PUT "/pages/1" for 127.0.0.1 at 2013-04-17 13:00:45 -0700
+  Processing by PagesController#update as JSON
+  Parameters: {"page"=>{"admin"=>"false"}, "authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA=", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (4.8ms)[0m  [1mUPDATE "pages" SET "admin" = 'f', "updated_at" = '2013-04-17 20:00:45.257388' WHERE "pages"."id" = 1[0m
+Completed 204 No Content in 354ms
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" 
+Rendered pages/index.html.erb within layouts/application (25.0ms)
+Rendered layouts/_navigation.html.erb (3.2ms)
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 179ms (Views: 70.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /application.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /jquery.purr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:04 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/pages/4" for 127.0.0.1 at 2013-04-17 13:01:33 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.9ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered pages/show.html.erb within layouts/application (33.2ms)
+Rendered layouts/_navigation.html.erb (1.4ms)
+Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 171ms (Views: 63.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /learningrails.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:01:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/4" for 127.0.0.1 at 2013-04-17 13:02:06 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (1.0ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered pages/show.html.erb within layouts/application (27.9ms)
+Rendered layouts/_navigation.html.erb (0.9ms)
+Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 183ms (Views: 60.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:06 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:06 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:06 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:06 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:07 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:07 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/4" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (2.5ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered pages/show.html.erb within layouts/application (25.2ms)
+Rendered layouts/_navigation.html.erb (1.4ms)
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 264ms (Views: 65.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:27 -0700
+Served asset /best_in_place.js - 304 Not Modified (2ms)
+
+
+Started GET "/pages/4" for 127.0.0.1 at 2013-04-17 13:02:31 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered pages/show.html.erb within layouts/application (23.1ms)
+Rendered layouts/_navigation.html.erb (1.6ms)
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 57.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:31 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:31 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:02:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:32 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:32 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:02:32 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/4" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered pages/show.html.erb within layouts/application (25.6ms)
+Rendered layouts/_navigation.html.erb (1.0ms)
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 175ms (Views: 56.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:03:35 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-17 13:04:00 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" 
+Rendered pages/index.html.erb within layouts/application (29.4ms)
+Rendered layouts/_navigation.html.erb (1.2ms)
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 175ms (Views: 60.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/goo/users/logout" for 127.0.0.1 at 2013-04-17 13:04:06 -0700
+  Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sRp3YmbHpul3GD0VnmkAJoTOYF3JtCcROCRwARnY8aA="}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+Redirected to http://localhost:3000/
+Completed 302 Found in 99ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (0.3ms)
+Rendered layouts/_navigation.html.erb (2.6ms)
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'
+Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 37.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2013-04-17 13:04:10 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (0.3ms)
+Rendered layouts/_navigation.html.erb (1.8ms)
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 98ms (Views: 33.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:10 -0700
+Served asset /reset.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:10 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:10 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:10 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:11 -0700
+Served asset /best_in_place.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:11 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/login" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (0.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+Rendered layouts/_navigation.html.erb (5.1ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 166ms (Views: 72.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/goo/users/login" for 127.0.0.1 at 2013-04-17 13:04:23 -0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RyNQSl3RYPXvidAfRiowhmVVy4t62ChoNvvTXyDBFGI=", "user"=>{"email"=>"admin@cairnbrain.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@cairnbrain.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-17 19:53:43.652724', "current_sign_in_at" = '2013-04-17 20:04:24.811464', "sign_in_count" = 33, "updated_at" = '2013-04-17 20:04:24.812804' WHERE "users"."id" = 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+Redirected to http://localhost:3000/
+Completed 302 Found in 1018ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (0.3ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 34.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /reset.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:25 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-04-17 13:04:27 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"admin"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."name" = 'admin' LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (0.2ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 262ms (Views: 35.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /jquery.purr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /learningrails.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-17 13:04:30 -0700
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (9.6ms)
+Rendered layouts/_navigation.html.erb (1.2ms)
+Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 281ms (Views: 69.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "pages".* FROM "pages" 
+Rendered pages/index.html.erb within layouts/application (29.5ms)
+Rendered layouts/_navigation.html.erb (1.3ms)
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 267ms (Views: 60.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:36 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/4" for 127.0.0.1 at 2013-04-17 13:04:40 -0700
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (4.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered pages/show.html.erb within layouts/application (26.7ms)
+Rendered layouts/_navigation.html.erb (1.2ms)
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 266ms (Views: 55.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:40 -0700
+Served asset /reset.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:40 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:04:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:40 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:40 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:41 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:04:41 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started PUT "/pages/4" for 127.0.0.1 at 2013-04-17 13:06:00 -0700
+  Processing by PagesController#update as JSON
+  Parameters: {"page"=>{"body"=>"# Contact Us\n\n* CairnBrain Media\n* 11607 NE 102nd PL\n* anywhere, ww, usa"}, "authenticity_token"=>"RyNQSl3RYPXvidAfRiowhmVVy4t62ChoNvvTXyDBFGI=", "id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mPage Load (0.6ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.4ms)[0m  [1mUPDATE "pages" SET "body" = '# Contact Us
+
+* CairnBrain Media
+* 11607 NE 102nd PL
+* anywhere, ww, usa', "updated_at" = '2013-04-17 20:06:00.591897' WHERE "pages"."id" = 4[0m
+Completed 204 No Content in 406ms
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" 
+Rendered pages/index.html.erb within layouts/application (127.1ms)
+Rendered layouts/_navigation.html.erb (1.1ms)
+Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 279ms (Views: 170.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /best_in_place.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-04-17 13:06:06 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"contact"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (0.7ms)[0m  SELECT "pages".* FROM "pages" 
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'contact' LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (0.2ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 141ms (Views: 39.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /users.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/goo/users/logout" for 127.0.0.1 at 2013-04-17 13:06:17 -0700
+  Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RyNQSl3RYPXvidAfRiowhmVVy4t62ChoNvvTXyDBFGI="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 13:06:17 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (0.2ms)
+Rendered layouts/_navigation.html.erb (2.2ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'[0m
+Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 34.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:17 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:18 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:06:18 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:18 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:18 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:18 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:06:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"about"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."name" = 'about' LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (0.3ms)
+Compiled learningrails.css  (1ms)  (pid 17906)
+Compiled application.css  (7ms)  (pid 17906)
+Rendered layouts/_navigation.html.erb (1.7ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'[0m
+Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 125ms (Views: 61.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /learningrails.css - 200 OK (263ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /application.css - 200 OK (29ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2013-04-17 13:10:30 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"resources"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."name" = 'resources' LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (0.2ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 32.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:30 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:31 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:31 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:31 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:31 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-04-17 13:10:31 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"contact"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."name" = 'contact' LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (0.2ms)
+Rendered layouts/_navigation.html.erb (1.8ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 196ms (Views: 33.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/login" for 127.0.0.1 at 2013-04-17 13:10:34 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (0.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+Rendered layouts/_navigation.html.erb (3.5ms)
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'
+Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 243ms (Views: 162.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:34 -0700
+Served asset /reset.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:34 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:35 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:35 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:35 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:35 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-17 13:10:37 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.3ms)
+Rendered devise/registrations/new.html.erb within layouts/application (152.3ms)
+Rendered layouts/_navigation.html.erb (1.8ms)
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 262ms (Views: 214.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /best_in_place.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:38 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/goo/users/login" for 127.0.0.1 at 2013-04-17 13:10:46 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (0.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (20.0ms)
+Rendered layouts/_navigation.html.erb (1.8ms)
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."admin" = 'f'
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 243ms (Views: 162.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-17 13:10:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)

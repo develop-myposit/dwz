@@ -40,12 +40,7 @@ class PagesController < ApplicationController
     end
   end
 
-  # GET /pages/1/edit
-  def edit
-    @page = Page.find(params[:id])
-  end
-
-  # POST /pages
+    # POST /pages
   # POST /pages.xml
   def create
     @page = Page.new(params[:page])
@@ -69,10 +64,12 @@ class PagesController < ApplicationController
     respond_to do |format|
       if @page.update_attributes(params[:page])
         format.html { redirect_to(@page, :notice => 'Page was successfully updated.') }
+        format.json { respond_with_bip(@page) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @page.errors, :status => :unprocessable_entity }
+        format.json { respond_with_bip(@page) }
       end
     end
   end

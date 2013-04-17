@@ -1,23 +1,27 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Show/Edit Pages</h1>
+<br />
+<p><strong>Click on field to update content</strong></p><br />
+
 <p>
   <b>Name:</b>
-  <%= @page.name %>
+  <%= best_in_place @page, :name %>
 </p>
 
 <p>
   <b>Title:</b>
-  <%= @page.title %>
+  <%= best_in_place @page, :title %>
 </p>
 
 <p>
   <b>Body:</b>
-  <%= @page.body %>
+  <%= best_in_place @page, :body, type: :textarea %>
 </p>
 
 <p>
 	<b>Administrator:</b>
-	<%= @page.admin? ? "TRUE" : "FALSE" %>
+	<%= best_in_place @page, :admin, type: :checkbox, collection: %w[FALSE TRUE] %>
 </p>
 <br />
 

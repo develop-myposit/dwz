@@ -31,6 +31,9 @@ GEM
       multi_json (~> 1.0)
     arel (2.2.3)
     bcrypt-ruby (3.0.1)
+    best_in_place (2.1.0)
+      jquery-rails
+      rails (~> 3.1)
     better_errors (0.8.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -126,6 +129,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  best_in_place
   better_errors
   binding_of_caller
   coffee-rails (~> 3.1.0)
