@@ -1,1 +1,10 @@
+<% unless @subpages.empty? %>
+   <div id='subnav'>
+      <ul>
+         <% for page in @subpages %>
+            <li><%= link_to page.navlabel, view_page_path(page.name) %></li>
+         <% end %>
+      </ul>
+   </div>
+<% end %>
 <%=  dmarkdown @page.body %>

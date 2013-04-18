@@ -5,25 +5,39 @@
 <p><strong>Click on field to update content</strong></p><br />
 
 <p>
-  <b>Name:</b>
+  <b>Page Record Name:</b>
   <%= best_in_place @page, :name %>
 </p>
 
 <p>
-  <b>Title:</b>
+  <b>Page Display Title:</b>
   <%= best_in_place @page, :title %>
 </p>
 
 <p>
-  <b>Body:</b>
+  <b>Page Body (use Markdown):</b>
   <%= best_in_place @page, :body, type: :textarea %>
 </p>
 
 <p>
-	<b>Administrator:</b>
+	<b>Admin Page?</b>
 	<%= best_in_place @page, :admin, type: :checkbox, collection: %w[FALSE TRUE] %>
 </p>
 <br />
-
-<%= link_to 'Edit', edit_page_path(@page) %> |
+<p>
+  <b>Parent Page? (leave blank if this is a parent page):</b>
+  <%= best_in_place @page, :id, :type => :select, :collection => Page::list_title_options %>
+</p>
+<br />
+  
+<p>
+   <b>Left(1) to Right(1+n) Position:</b>
+   <%= best_in_place @page, :position, :size => 3 %>
+</p>
+<br />
+<p>
+ <b>Navigation Label:</b>
+   <%= best_in_place @page, :navlabel %>
+ </p>
+ <br />
 <%= link_to 'Back', pages_path %>

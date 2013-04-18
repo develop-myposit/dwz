@@ -77,6 +77,12 @@ nav ul li a:hover {
     background-color: #969DF9;
     color: #fff;
 }
+#subnav {
+   width: 200px;
+   float: left;
+   border-right: 1px solid blue;
+   margin-right:20px;
+}
 
 ul#log_nav {
    padding-right: 2em;
