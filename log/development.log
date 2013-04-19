@@ -21515,3 +21515,1447 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-18 16:48:44 -0700
 Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-19 09:32:13 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "pages" WHERE "pages"."parent_id" = 1
+Rendered viewer/show.html.erb within layouts/application (64.5ms)
+Rendered layouts/_navigation.html.erb (3.1ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 1055ms (Views: 583.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:14 -0700
+Served asset /reset.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:15 -0700
+Served asset /learningrails.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:15 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:15 -0700
+Served asset /jquery.js - 304 Not Modified (57ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:15 -0700
+Served asset /jquery.purr.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:15 -0700
+Served asset /best_in_place.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:15 -0700
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:15 -0700
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 09:32:18 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (6.6ms)
+Rendered devise/registrations/new.html.erb within layouts/application (92.2ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 260ms (Views: 187.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /learningrails.css - 304 Not Modified (96ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (63.2ms)
+Rendered layouts/_navigation.html.erb (1.6ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 268ms (Views: 200.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:32:33 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 09:34:27 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (0.7ms)
+Rendered devise/registrations/new.html.erb within layouts/application (139.4ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 268ms (Views: 197.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:27 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:28 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:28 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:28 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:28 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:28 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2013-04-19 09:34:38 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "pages" WHERE "pages"."parent_id" = 1
+Rendered viewer/show.html.erb within layouts/application (5.8ms)
+Rendered layouts/_navigation.html.erb (2.9ms)
+  [1m[36mPage Load (0.7ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 128ms (Views: 35.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:38 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:38 -0700
+Served asset /application.css - 304 Not Modified (83ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:39 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:39 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:39 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:39 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (0.9ms)
+Rendered devise/registrations/new.html.erb within layouts/application (65.5ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 269ms (Views: 198.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /jquery.purr.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:34:42 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2013-04-19 09:35:37 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "pages" WHERE "pages"."parent_id" = 1
+Rendered viewer/show.html.erb within layouts/application (6.3ms)
+Rendered layouts/_navigation.html.erb (1.9ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 129ms (Views: 34.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /reset.css - 200 OK (33ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /jquery.purr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /learningrails.css - 200 OK (91ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /application.css - 200 OK (34ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /best_in_place.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /users.js - 200 OK (28ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:38 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 09:35:40 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/registrations/new.html.erb within layouts/application (46.9ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 233ms (Views: 173.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 09:35:54 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (44.9ms)
+Rendered layouts/_navigation.html.erb (1.6ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 234ms (Views: 172.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:54 -0700
+Served asset /reset.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:54 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:54 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:55 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:55 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:55 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (117.5ms)
+Rendered layouts/_navigation.html.erb (1.4ms)
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 234ms (Views: 172.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /reset.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:35:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (4.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "pages" WHERE "pages"."parent_id" = 1
+Rendered viewer/show.html.erb within layouts/application (77.1ms)
+Rendered layouts/_navigation.html.erb (1.6ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 164ms (Views: 107.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /jquery.purr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /learningrails.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /best_in_place.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:39 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 09:36:41 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (116.2ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 233ms (Views: 170.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /reset.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 09:36:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 10:11:21 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (99.3ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 321ms (Views: 170.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /learningrails.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:11:22 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 10:23:30 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (44.0ms)
+Compiled application.js  (14ms)  (pid 3846)
+Compiled userfocus.js  (0ms)  (pid 3846)
+Rendered layouts/_navigation.html.erb (2.5ms)
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 232ms (Views: 168.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /userfocus.js - 200 OK (26ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /users.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:23:31 -0700
+Served asset /application.js - 200 OK (180ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 10:32:26 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.2ms)
+Rendered devise/registrations/new.html.erb within layouts/application (144.4ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 284ms (Views: 212.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:32:26 -0700
+Served asset /reset.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /learningrails.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:32:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:33:29 -0700
+Served asset /best_in_place.js - 304 Not Modified (9ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 10:36:07 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (0.9ms)
+Rendered devise/registrations/new.html.erb within layouts/application (51.8ms)
+Compiled userfocus.js  (0ms)  (pid 3846)
+Compiled application.js  (13ms)  (pid 3846)
+Rendered layouts/_navigation.html.erb (1.4ms)
+  [1m[35mPage Load (0.3ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 301ms (Views: 147.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:07 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:07 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:07 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:08 -0700
+Served asset /jquery.purr.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:08 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:08 -0700
+Served asset /userfocus.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:08 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:08 -0700
+Served asset /application.js - 200 OK (19ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "pages" WHERE "pages"."parent_id" = 1
+Rendered viewer/show.html.erb within layouts/application (6.1ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 214ms (Views: 35.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+Served asset /learningrails.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+Served asset /jquery.purr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:12 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:13 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 10:36:16 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (0.9ms)
+Rendered devise/registrations/new.html.erb within layouts/application (44.9ms)
+Rendered layouts/_navigation.html.erb (1.1ms)
+  [1m[35mPage Load (1.0ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 257ms (Views: 105.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:16 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:16 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:36:17 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:17 -0700
+Served asset /jquery.purr.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:17 -0700
+Served asset /best_in_place.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:17 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:17 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:36:17 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/sign_up" for 127.0.0.1 at 2013-04-19 10:37:35 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (50.1ms)
+Rendered layouts/_navigation.html.erb (1.6ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 183ms (Views: 109.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:37:35 -0700
+Served asset /reset.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:36 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/goo/users/login" for 127.0.0.1 at 2013-04-19 10:37:55 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Rendered layouts/_navigation.html.erb (1.4ms)
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 203ms (Views: 92.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:37:55 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:37:55 -0700
+Served asset /learningrails.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:37:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:55 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:55 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:56 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:37:56 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/login" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+  Processing by Devise::SessionsController#new as HTML
+Compiled useremail.js  (0ms)  (pid 3846)
+Rendered devise/shared/_links.erb (0.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (38.7ms)
+Compiled application.js  (13ms)  (pid 3846)
+Rendered layouts/_navigation.html.erb (1.6ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 319ms (Views: 208.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /reset.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/useremail.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /useremail.js - 200 OK (45ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:23 -0700
+Served asset /application.js - 200 OK (21ms)
+
+
+Started POST "/goo/users/login" for 127.0.0.1 at 2013-04-19 10:42:38 -0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c4Xy1yqQz9WBeX4O22EyZDwtC12j0bXlQt6GELKEpWI=", "user"=>{"email"=>"admin@cairnbrain.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@cairnbrain.com' LIMIT 1
+  [1m[36m (19.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-18 23:47:11.175147', "current_sign_in_at" = '2013-04-19 17:42:39.151081', "sign_in_count" = 41, "updated_at" = '2013-04-19 17:42:39.152338' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1180ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-19 10:42:39 -0700
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (1.6ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "pages" WHERE "pages"."parent_id" = 1
+Rendered viewer/show.html.erb within layouts/application (6.3ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL) ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 172ms (Views: 38.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:39 -0700
+Served asset /reset.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:39 -0700
+Served asset /learningrails.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /jquery.purr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/useremail.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /useremail.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:40 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"admin"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE "pages"."name" = 'admin' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "pages" WHERE "pages"."parent_id" = 6
+Rendered viewer/show.html.erb within layouts/application (10.3ms)
+Rendered layouts/_navigation.html.erb (1.3ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL) ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 270ms (Views: 38.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/useremail.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /useremail.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+Rendered pages/index.html.erb within layouts/application (33.2ms)
+Rendered layouts/_navigation.html.erb (1.1ms)
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL) ORDER BY position
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 272ms (Views: 65.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/useremail.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /useremail.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2013-04-19 10:42:55 -0700
+  Processing by PagesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPage Load (2.4ms)[0m  SELECT "pages".* FROM "pages" 
+Rendered pages/_form.html.erb (10.2ms)
+Rendered pages/new.html.erb within layouts/application (45.6ms)
+Rendered layouts/_navigation.html.erb (1.2ms)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL) ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 288ms (Views: 70.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:55 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:55 -0700
+Served asset /learningrails.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:42:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:56 -0700
+Served asset /jquery.purr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:56 -0700
+Served asset /best_in_place.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:56 -0700
+Served asset /userfocus.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:56 -0700
+Served asset /users.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/useremail.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:56 -0700
+Served asset /useremail.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:42:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2013-04-19 10:44:55 -0700
+  Processing by PagesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Compiled pagename.js  (0ms)  (pid 3846)
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT "pages".* FROM "pages" [0m
+Rendered pages/_form.html.erb (46.6ms)
+Rendered pages/new.html.erb within layouts/application (76.3ms)
+Compiled application.js  (14ms)  (pid 3846)
+Rendered layouts/_navigation.html.erb (1.9ms)
+  [1m[35mPage Load (0.5ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL) ORDER BY position
+Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 371ms (Views: 233.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /reset.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /learningrails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /jquery.purr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagename.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /pagename.js - 200 OK (36ms)
+
+
+Started GET "/assets/useremail.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /useremail.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:44:56 -0700
+Served asset /application.js - 200 OK (26ms)
+
+
+Started DELETE "/goo/users/logout" for 127.0.0.1 at 2013-04-19 10:45:02 -0700
+  Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"c4Xy1yqQz9WBeX4O22EyZDwtC12j0bXlQt6GELKEpWI="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 194ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE "pages"."name" = 'home' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "pages" WHERE "pages"."parent_id" = 1[0m
+Rendered viewer/show.html.erb within layouts/application (5.5ms)
+Rendered layouts/_navigation.html.erb (1.7ms)
+  [1m[35mPage Load (0.4ms)[0m  SELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 39.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /learningrails.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/useremail.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /useremail.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagename.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /pagename.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /userfocus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/goo/users/login" for 127.0.0.1 at 2013-04-19 10:45:17 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (0.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+Rendered layouts/_navigation.html.erb (1.5ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE (parent_id IS NULL and admin !='t') ORDER BY position[0m
+Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 263ms (Views: 153.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/learningrails.css?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /learningrails.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagename.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /pagename.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/useremail.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /useremail.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userfocus.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /userfocus.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 10:45:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
