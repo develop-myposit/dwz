@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
 before_filter :authenticate_user!
+before_filter :set_pagetitle
 
+def set_pagetitle
+   @pagetitle = "User Administration"
+end
 # GET /users
 # GET /users.json
    

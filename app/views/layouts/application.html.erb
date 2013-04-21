@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title><%= @pagetitle || (@page && @page.title) || 'Learn30' %></title>
+    <title><%= @pagetitle %></title>
     <meta name="title" content="Learn30 Test Application" />
     <meta name="description" content="Sample Rails Application" />
     <meta name="author" content="paul" />
@@ -14,18 +14,18 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
-  <%= render 'layouts/navigation' %>
-  <br />
-
+  <%= render 'layouts/navigation' %><br />
   <div id='pagewrapper'>
          <header>
 			<p>Learning Rails Sample Application</p>
          <nav>
 				<ul>
-          <% @tabs.each do |page| -%>
-            <li><%= link_to page.navlabel, view_page_path(page.name) %>
-          <% end -%>
-  			</ul>
+              <% @tabs.each do |page| -%>
+                <li <%= raw "id='current'" if @page && (@page == page || @page.parent == page )  %>>
+                  <%= link_to page.navlabel, view_page_path(page.name) %>
+                </li>
+              <% end -%>
+            </ul>
          </nav>
 		</header>
       <div id='content'>

@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
 
-    before_filter :loadmetadata
+    before_filter :set_pagetitle
     before_filter :authenticate_user!
 
-    def loadmetadata
+    def set_pagetitle
         @pagetitle = "Page Administration"
     end
 

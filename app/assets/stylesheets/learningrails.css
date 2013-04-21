@@ -1,6 +1,5 @@
 body {
    background-color: white;
-/*    width: 900px; */
     padding: 0;
     font-family: Verdana, Tahoma, sans-serif;
     line-height: 1.6em;
@@ -8,22 +7,21 @@ body {
 #pagewrapper {
     margin: 10px auto;
     padding: 0;
-/*    border: 1px solid #03073E;  */
     font-family: Tahoma, Geneva, sans-serif;
 }
 #content {
     padding: 20px 10px;
 }
 header {
-    background-color: #222A8E;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
 header p {
     padding: 20px 10px;
-    font-size: 24px;
+    font-size: 36px;
     margin: 0;
-    color: white;
+    color: #222a8e;
     font-weight: bold;
     font-family: Montserrat;
 }
@@ -37,7 +35,7 @@ footer {
 }
 footer p, #footer a {
     text-align: center;
-    font-size: 12px;
+    font-size: 24px;
     color: white;
     font-weight:bold;
     margin: 0;
@@ -46,6 +44,9 @@ footer p, #footer a {
 }
 
 /* Navigation Bar */
+
+nav {
+   padding-bottom: 20px;}
 
 nav ul {
     padding: 0;
@@ -77,20 +78,44 @@ nav ul li a:hover {
     background-color: #969DF9;
     color: #fff;
 }
+nav li#current a {
+   background-color: #dee0f9;
+   color: #03073e;
+}
 #subnav {
    width: 200px;
    float: left;
-   border-right: 1px solid blue;
-   margin-right:20px;
+   margin: 0 20px 50px -10px;
+}
+#subnav ul {
+    list-style: none;
+    font-weight: bold;
+    font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+#subnav ul li {
+	background-color: #999;
+	border-bottom: 1px solid #333;
+	border-top: 1px solid #333;
+}
+#subnav ul li a {
+	padding: 5px 10px;
+	display:block;
+	color:white;
+	text-decoration: none;
+}
+#subnav ul li a:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 ul#log_nav {
-   padding-right: 2em;
    color: #2e2155;
-   list-style-type: none;
-   margin: 0 0 2em;
-   float: right;
-   font-family: Tahoma, Geneva, sans-serif;
+   font-size: 14px;
+   position: absolute;
+   top: 15px;
+   right: 100px;
 }
 
 ul#log_nav li {
@@ -106,11 +131,17 @@ ul#log_nav li a {
 #flash_notice {
    background-color: #CFC;
    border: solid 1px #6C6;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   width: 50%;
 }
 
 #flash_alert {
    background-color: #FCC;
    border: solid 1px #C66;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   width: 50%;
 }
 #hor-minimalist-a
 {
@@ -138,8 +169,8 @@ ul#log_nav li a {
   color: #009;
 }
 #vtab th {
- text-align: left; 
-} 
+ text-align: left;
+}
 /* style for best_in_place messages */
 .purr {
   position: fixed;
@@ -151,4 +182,3 @@ ul#log_nav li a {
   border: solid 2px #666;
   &:first-letter { text-transform: uppercase };
 }
-

@@ -1,4 +1,4 @@
-<% unless @subpages.empty? %>
+<% if !@subpages.empty? %>
    <div id='subnav'>
       <ul>
          <% for page in @subpages %>
@@ -6,5 +6,14 @@
          <% end %>
       </ul>
    </div>
+<% elsif @page.parent %>
+   <div id='subnav'>
+      <ul>
+         <li>
+           <%= link_to "Return to #{@page.parent.navlabel}", view_page_path(@page.parent.name) %>
+         </li>
+      </ul>
+   </div>
 <% end %>
+
 <%=  dmarkdown @page.body %>
