@@ -3,14 +3,16 @@
 
 <table id= "vtab" width="100%">
   <col style="width:25%">
-  <col style="width:45%">
+  <col style="width:25%">
   <col style="width:10%">
   <col style="width:10%">
   <col style="width:10%">
+  <col style="width:20%">
   <tr>
     <th>Name</th>
     <th>Title</th>
     <th>Admin?</th>
+    <th></th>
     <th></th>
     <th></th>
   </tr>
@@ -20,7 +22,8 @@
     <td><%= page.name %></td>
     <td><%= page.title %></td>
     <td><%= page.admin? ? "TRUE" : "FALSE" %>
-    <td><%= link_to 'Edit', page %></td>
+    <td><%= link_to 'Show', page %>
+    <td><%= link_to 'Edit', edit_page_path(page) %></td>
     <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

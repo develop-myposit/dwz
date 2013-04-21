@@ -1,12 +1,16 @@
-<h2>Resend confirmation instructions</h2>
+<h1 style="color: #03073e;">Resend confirmation instructions</h1>
 
-<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
-  <%= devise_error_messages! %>
+<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name),
+           :html => { :class => 'form', :method => :post }) do |f| %>
+<%= devise_error_messages! %>
+<div style = "email">
+  <%= f.email_field :email, :autofocus => true %>
+  <%= f.label :email %>
+</div>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
-
-  <div><%= f.submit "Resend confirmation instructions" %></div>
+<div class="submit">
+  <%= f.submit "Resend confirmation instructions" %>
+</div>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

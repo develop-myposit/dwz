@@ -1,14 +1,17 @@
-<%= javascript_include_tag "useremail" %>
-<h2 id="form_head">Forgot your password?</h2>
-<br />
+<h1 style="color: #03073e;">Forgot your password?</h1>
 
-<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), 
+    :html => {:class => 'form',:method => :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
-
-  <div><%= f.submit "Send me reset password instructions" %></div>
+  <div class="email">
+    <%= f.email_field :email, :autofocus => true %>
+    <%= f.label :email %>
+  </div>
+  
+  <div class="submit">
+    <%= f.submit "Send me reset password instructions" %>
+  </div>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

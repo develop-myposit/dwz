@@ -1,13 +1,17 @@
-<%= javascript_include_tag "useremail" %>
-<h2 id="form_head">Resend unlock instructions</h2>
+<h1 style="color: #03073e;">Resend unlock instructions</h1>
 
-<%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f| %>
-  <%= devise_error_messages! %>
+<%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), 
+   :html => { :method => :post, :class => 'form' }) do |f| %>
+<%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+<div class="email">
+  <%= f.email_field :email, :autofocus => true %>
+  <%= f.label :email %>
+</div>
 
-  <div><%= f.submit "Resend unlock instructions" %></div>
+<div class="submit">
+  <%= f.submit "Resend unlock instructions" %>
+</div>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

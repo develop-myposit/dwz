@@ -7,8 +7,8 @@
     <%= f.label :title, "Page Display Title" %>
 </p>
 <p class="admin">
-    <%= f.check_box :admin %>
     <%=f.label :admin, "Admin Page?" %>
+    <%= f.check_box :admin %>
 </p>
 <p class = "parent_id">
     <%= f.collection_select :parent_id, Page.all, :id, :title, :include_blank => true %>
@@ -23,7 +23,7 @@
     <%= f.label :navlabel, "Navigation Label" %>
 </p>
 <p class="body">
-<%= f.label :body, 'Page Body (use Markdown)' %><br />
+    <%= f.label :body, 'Page Body (use Markdown)' %><br />
     <%= f.text_area :body %>
 </p>
 

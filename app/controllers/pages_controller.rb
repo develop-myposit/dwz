@@ -40,7 +40,12 @@ class PagesController < ApplicationController
     end
   end
 
-    # POST /pages
+  # GET /pages/1/edit
+  def edit
+    @page = Page.find(params[:id])
+  end
+
+  # POST /pages
   # POST /pages.xml
   def create
     @page = Page.new(params[:page])
