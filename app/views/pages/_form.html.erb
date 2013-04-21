@@ -1,23 +1,29 @@
-<%= javascript_include_tag "pagename" %>
-    <%= f.label :name, "Page Record Name" %><br />
+<p class = "name">
     <%= f.text_field :name, :autofocus => true %>
-<br />
-    <%= f.label :title, "Page Display Title" %><br />
+    <%= f.label :name, "Page Record Name" %>
+</p>
+<p class = "title">
     <%= f.text_field :title %>
-<br />
-    <%= f.label :body, 'Page Body (use Markdown)' %><br />
-    <%= f.text_area :body %>
-<br />
-    <%=f.label :admin, "Admin Page?" %>
+    <%= f.label :title, "Page Display Title" %>
+</p>
+<p class="admin">
     <%= f.check_box :admin %>
-<br />
-    <%= f.label :parent_id, "Parent Page? (leave blank if this is a parent page)" %><br />
+    <%=f.label :admin, "Admin Page?" %>
+</p>
+<p class = "parent_id">
     <%= f.collection_select :parent_id, Page.all, :id, :title, :include_blank => true %>
- <br />
-    <%= f.label :position, 'Left(1) to Right(1+n) Position?' %>
+    <%= f.label :parent_id, "Parent Page? (leave blank if this is a parent page)" %>
+</p>
+<p class= "position">
     <%= f.text_field :position, :size => 2 %>
- <br />
-    <%= f.label :navlabel, "Navigation Label" %>
+    <%= f.label :position, 'Left(1) to Right(1+n) Position?' %>
+</p>
+<p class="navlabel">
     <%= f.text_field :navlabel %>
-<br /> 
+    <%= f.label :navlabel, "Navigation Label" %>
+</p>
+<p class="body">
+<%= f.label :body, 'Page Body (use Markdown)' %><br />
+    <%= f.text_area :body %>
+</p>
 

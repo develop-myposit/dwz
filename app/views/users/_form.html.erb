@@ -1,21 +1,27 @@
-<%= javascript_include_tag "userfocus" %>
-<%= form_for(@user) do |f| %>
-
-  <p><%= f.label :name %><br />
-  <%= f.text_field :name %></p>
+<%= form_for(@user, :html => {:class => "form"} ) do |f| %>
+   <p class = "name">
+     <%= f.label :name , :autofocus => true %><br />
+     <%= f.text_field :name %>
+   </p>
  
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
+  <p class = "email">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, :type =>"email" %>
+  </p>
  
   <% if action_name == "new" %>
-  <p><%= f.label :password, "New password" %><br />
-  <%= f.password_field :password %></p>
- 
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
-  <% end %>
- 
- <div class="actions">
+     <p class= "password">
+       <%= f.label :password, "New password" %>
+       <%= f.password_field :password %>
+     </p>
+
+     <p class="password_confirmation">
+       <%= f.label :password_confirmation %><br />
+       <%= f.password_field :password_confirmation %>
+     </p>
+    <% end %>
+
+<p class = "submit">
     <%= f.submit %>
-  </div>
+</p>
 <% end %>

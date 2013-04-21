@@ -7,6 +7,7 @@ gem 'jquery-rails', '~> 2.1'
 gem 'redcarpet', '~> 2.2.2'
 gem 'sqlite3'
 gem 'best_in_place'
+gem 'google-webfonts'
 
 group :development do
    gem "better_errors"

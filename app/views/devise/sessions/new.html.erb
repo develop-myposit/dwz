@@ -1,20 +1,28 @@
-<%= javascript_include_tag "useremail" %>
-<h2>Login</h2>
-<br />
+<h1 style="color: #03073e;">Login</h1>
+<p>Enter your login credentials</p>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+<%= form_for(resource, :as => resource_name, :html => {:class => 'form'},:url => session_path(resource_name)) do |f| %>
+<p class = "email">
+  <%= f.email_field :email , :autofocus => true %>
+  <%= f.label :email %>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+</p>
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
- <% end -%>
- <br />
+<p class = "password">
+  <%= f.password_field :password %>
+  <%= f.label :password %>
 
-  <div><%= f.submit "Login" %></div>
+</p>
+
+<% if devise_mapping.rememberable? -%>
+    <p class = "remember">
+    <%= f.check_box :remember_me %> <%= f.label :remember_me %>
+    </p>
+ <% end %>
+ 
+<p class = "submit">
+  <%= f.submit "Login" %>
+</p>
 <% end %>
-<br />
+
 <%= render :partial => "devise/shared/links" %>

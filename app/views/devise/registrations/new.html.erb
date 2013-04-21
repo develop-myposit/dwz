@@ -1,31 +1,27 @@
-<h2>New User Sign up</h2>
+<h1 style="color: #03073e">New User Sign up</h1>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<%= form_for(resource, :as => resource_name, :html => {:class => 'form'},:url => registration_path(resource_name)) do |f| %>
+<%= devise_error_messages! %>
 
-  <br />
-  
-  <div><%= f.label :name %><br />
-  <%= f.text_field :name %></div>
-
-<br />
-
-<div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
-
-<br />
-
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-<br />
-
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
-
-<br />
-
-  <div><%= f.submit "Sign me up" %></div>
+<p class = "name">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</p>
+<p class="email">
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+</p>
+<p class="password">
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+</p>
+<p class="password_confirmation">
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
+</p>
+<p class="submit">
+<%= f.submit "Sign me up" %>
+</p>
 <% end %>
 
 <br />
