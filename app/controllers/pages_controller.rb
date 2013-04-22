@@ -52,7 +52,7 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @page.save
-        format.html { redirect_to(@page, :notice => 'Page was successfully created.') }
+        format.html { redirect_to(:action => "index", :notice => 'Page was successfully created.') }
         format.xml  { render :xml => @page, :status => :created, :location => @page }
       else
         format.html { render :action => "new" }
@@ -68,7 +68,7 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @page.update_attributes(params[:page])
-        format.html { redirect_to(@page, :notice => 'Page was successfully updated.') }
+        format.html { redirect_to(:action => "edit", :notice => 'Page was successfully updated.') }
         format.json { respond_with_bip(@page) }
         format.xml  { head :ok }
       else
