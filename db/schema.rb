@@ -11,27 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130423040619) do
-
-  create_table "categories", :force => true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "categories_links", :id => false, :force => true do |t|
-    t.integer "category_id"
-    t.integer "link_id"
-  end
-
-  create_table "links", :force => true do |t|
-    t.string   "url"
-    t.string   "title"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20130417203457) do
 
   create_table "pages", :force => true do |t|
     t.string   "name"
@@ -43,9 +23,6 @@ ActiveRecord::Schema.define(:version => 20130423040619) do
     t.integer  "parent_id"
     t.string   "navlabel"
     t.integer  "position"
-    t.boolean  "redirect"
-    t.string   "action_name"
-    t.string   "controller_name"
   end
 
   create_table "users", :force => true do |t|
