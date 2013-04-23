@@ -22,6 +22,18 @@
     <%= f.text_field :navlabel %>
     <%= f.label :navlabel, "Navigation Label" %>
 </p>
+<p class="redirect">
+   <%= f.label :redirect, "Redirect?" %>
+   <%= f.check_box :redirect %>
+</p>
+<p class="action">
+   <%= f.text_field :action_name %>
+   <%= f.label :action_name, "Action" %>
+</p>
+<p class="controller_name">
+   <%= f.text_field :controller_name %>
+   <%= f.label :controller_name, "Controller" %>
+</p>   
 <p class="body">
     <%= f.label :body, 'Page Body (use Markdown)' %><br />
     <%= f.text_area :body %>

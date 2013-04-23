@@ -8,10 +8,12 @@ gem 'redcarpet', '~> 2.2.2'
 gem 'sqlite3'
 gem 'best_in_place'
 gem 'google-webfonts'
+gem 'awesome_print'
 
 group :development do
    gem "better_errors"
    gem "binding_of_caller"
+   gem 'webrick', '~> 1.3.1'
 end
 
 group :assets do

@@ -22,7 +22,11 @@
 				<ul>
               <% @tabs.each do |page| -%>
                 <li <%= raw "id='current'" if @page && (@page == page || @page.parent == page )  %>>
-                  <%= link_to page.navlabel, view_page_path(page.name) %>
+                <% if page.redirect? %>
+                   <%= link_to page.navlabel, :action =>page.action_name, :controller => page.controller_name, :name => page.name %>
+                <% else %>
+                   <%= link_to page.navlabel, view_page_path(page.name) %>
+                <% end %>
                 </li>
               <% end -%>
             </ul>
