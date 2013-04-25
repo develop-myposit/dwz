@@ -1,4 +1,5 @@
-<h1 style="color: #03073e;">Resend unlock instructions</h1>
+<section>
+<h1>Resend unlock instructions</h1>
 
 <%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), 
    :html => { :method => :post, :class => 'form' }) do |f| %>
@@ -15,3 +16,4 @@
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>
+</section>

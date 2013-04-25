@@ -10,9 +10,4 @@ class ApplicationController < ActionController::Base
       @tabs = Page.find_main_public
     end
   end
-
-  def get_page_metadata
-    @page = Page.find_by_name(params[:name])
-    @pagetitle = @page.title
-  end
 end

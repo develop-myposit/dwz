@@ -1,7 +1,8 @@
-<h1 style="color: #03073e;">New page</h1>
+<section>
+<h1>New page</h1>
 
 <% if @page.errors.any? %>
-    <div id="error_explanation">
+    <div id="flash_alert">
       <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
 
       <ul>
@@ -20,3 +21,4 @@
 <% end %>
 <br />
 <%= link_to 'Back', pages_path %>
+</section>

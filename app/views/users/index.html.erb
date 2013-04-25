@@ -1,4 +1,5 @@
-<h2>All Users</h2>
+<section>
+<h1>All Users</h1>
 
 <table id="hor-minimalist-a" cellspacing="0" cellpadding="0">
      <thead>
@@ -10,13 +11,13 @@
         </tr>
      </thead>
      <tbody>
-        <% for user in @users %>
+        <% @users.each do |user| %>
         <tr>
-         	<td><%=h user.name %></td>
-         	<td><%=h user.email %></td>
+         	<td><%=user.name %></td>
+         	<td><%=user.email %></td>
          	<td><%= link_to 'Show', user %></td>
 			<td><%= link_to "Edit", edit_user_registration_path(user) %></td>
-            <td><%= link_to "Delete", user, :method => :delete, :confirm => "Are you sure you want to delete #{user.email}?" %></td>
+            <td><%= link_to "Delete User", user, :method => :delete, :confirm => "Are you sure you want to delete #{user.email}?" %></td>
         </tr>
      <% end %>
     </tbody>
@@ -25,3 +26,4 @@
 <br />
 
 <p><%= link_to 'New User', new_user_registration_path %>
+</section>

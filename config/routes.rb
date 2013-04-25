@@ -1,5 +1,7 @@
 Learn30::Application.routes.draw do
 
+  resources :messages
+
   devise_for :users, :path_prefix => 'goo', path_names: {sign_in: "login", sign_out: "logout"}
 # resources :users, :only =>[:show, :index]
   resources :users

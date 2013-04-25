@@ -1,7 +1,9 @@
-<h1 style="color: #03073e;>User</h1>
+<section>
+<h1>User</h1>
 <br />
 <p class = "name">Name: <%= @user.name %></p>
 <br />
 <p class="email">Email: <%= @user.email if @user.email %></p>
 <br />
 <%= link_to 'All users', users_path %>
+</section>

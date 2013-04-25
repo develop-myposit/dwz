@@ -1,0 +1,25 @@
+<section>
+<h1>Editing message</h1>
+
+<% if @message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this page from being saved:</h2>
+
+      <ul>
+      <% @message.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+ <% end %>
+
+ <%= form_for(@message, :html => { :class => 'form'}) do |f| %>
+ <%= render :partial => "form", :locals => { :f => f } %>
+ <p class = "submit">
+   <%= f.submit "Update This Page" %>
+</p>
+<% end %>
+
+<%= link_to 'Show', @message %> |
+<%= link_to 'Back', messages_path %>
+</section>

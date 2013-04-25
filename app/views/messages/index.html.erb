@@ -1,0 +1,40 @@
+<section>
+<h1>Listing messages</h1>
+
+<table id="hor-minimalist-a" cellspacing="0" cellpadding="0">
+   <thead>
+     <tr>
+       <th>Name</th>
+       <th>Email</th>
+       <th>Company</th>
+       <th>Phone</th>
+       <th>Subject</th>
+       <th>Body</th>
+       <th></th>
+       <th></th>
+       <th></th>
+     </tr>
+   </thead>
+
+   <tbody>
+   <% @messages.each do |message| %>
+     <tr>
+       <td><%= message.name %></td>
+       <td><%= message.email %></td>
+       <td><%= message.company %></td>
+       <td><%= message.phone %></td>
+       <td><%= message.subject %></td>
+       <td><%= message.body %></td>
+       <td><%= link_to 'Show', message %></td>
+       <td><%= link_to 'Edit', edit_message_path(message) %></td>
+       <td><%= link_to 'Delete Message', message, confirm: 'Are you sure?', method: :delete %></td>
+     </tr>
+   <% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Message', new_message_path %>
+</section>
+

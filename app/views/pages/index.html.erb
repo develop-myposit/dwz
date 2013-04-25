@@ -1,22 +1,24 @@
-<h1 style="color: #03073e;">Page Administration</h1>
-<br />
+<section>
+<h1>Page Administration</h1>
 
-<table id= "vtab" width="100%">
+<table id= "hor-minimalist-a" width="100%">
   <col style="width:25%">
   <col style="width:25%">
   <col style="width:10%">
   <col style="width:10%">
   <col style="width:10%">
   <col style="width:20%">
-  <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Admin?</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+  <thead>
+     <tr>
+       <th>Name</th>
+       <th>Title</th>
+       <th>Admin?</th>
+       <th></th>
+       <th></th>
+       <th></th>
+     </tr>
+   </thead>
+   <tbody>
 <% @pages.each do |page| %>
   <tr>
     <td><%= page.name %></td>
@@ -24,11 +26,13 @@
     <td><%= page.admin? ? "TRUE" : "FALSE" %>
     <td><%= link_to 'Show', page %>
     <td><%= link_to 'Edit', edit_page_path(page) %></td>
-    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Delete Page', page, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
+</tbody>
 </table>
 
 <br />
 
 <%= link_to 'New Page', new_page_path %>
+</section>

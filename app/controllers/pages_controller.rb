@@ -33,6 +33,7 @@ class PagesController < ApplicationController
   # GET /pages/new.xml
   def new
     @page = Page.new
+    PageMailer.PageChange(@page).deliver
 
     respond_to do |format|
       format.html # new.html.erb
@@ -52,6 +53,7 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @page.save
+
         format.html { redirect_to(:action => "index", :notice => 'Page was successfully created.') }
         format.xml  { render :xml => @page, :status => :created, :location => @page }
       else
@@ -68,7 +70,8 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @page.update_attributes(params[:page])
-        format.html { redirect_to(:action => "edit", :notice => 'Page was successfully updated.') }
+        PageMailer.PageChange(@page).deliver
+        format.html { redirect_to(:action => "index", :notice => 'Page was successfully updated.') }
         format.json { respond_with_bip(@page) }
         format.xml  { head :ok }
       else
@@ -84,6 +87,7 @@ class PagesController < ApplicationController
   def destroy
     @page = Page.find(params[:id])
     @page.destroy
+    PageMailer.DeletePage(@page).deliver
 
     respond_to do |format|
       format.html { redirect_to(pages_url) }

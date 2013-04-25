@@ -7,9 +7,8 @@
     <meta name="description" content="Sample Rails Application" />
     <meta name="author" content="paul" />
 
-    <%= google_webfonts_link_tag :montserrat%>
+    <%= google_webfonts_link_tag :montserrat %>
     <%= stylesheet_link_tag 'application' %>
-    <%= stylesheet_link_tag 'formstyles' %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tag %>
   </head>
@@ -17,7 +16,7 @@
   <%= render 'layouts/navigation' %><br />
   <div id='pagewrapper'>
          <header>
-			<p>Learning Rails Sample Application</p>
+			<div class="banner"><%= link_to image_tag("learn30_header.jpg", alt: "Learning Rails Application"), root_path %></div>
          <nav>
 				<ul>
               <% @tabs.each do |page| -%>
