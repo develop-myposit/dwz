@@ -1,11 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.1.12'
+gem 'rails', '~> 3.2.13'
 gem 'devise'
 gem 'figaro'
 gem 'jquery-rails', '~> 2.1'
 gem 'redcarpet', '~> 2.2.2'
-gem 'sqlite3'
+gem 'pg'
 gem 'best_in_place'
 gem 'google-webfonts'
 gem 'awesome_print'
@@ -17,8 +17,8 @@ group :development do
 end
 
 group :assets do
-   gem 'sass-rails', " ~> 3.1.0"
-   gem 'coffee-rails', "~>3.1.0"
+   gem 'sass-rails'
+   gem 'coffee-rails'
    gem 'uglifier'
 end
 

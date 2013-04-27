@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-Learn30::Application.config.session_store :cookie_store, :key => '_learningrails_9_session'
+Learn30::Application.config.session_store :cookie_store, key: '_learn30_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
