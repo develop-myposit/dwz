@@ -15,17 +15,17 @@
                      :admin => false,
                      :body => '# Welcome to our home page - Heading  ##Sample H2...')
    puts "#{p.title} page has been created"
-   p=Page.create(:name => 'about', :title => 'About the Learning Rails Sample Application', :navlabel => 'About', :position => 2,
+   p=Page.create(:name => 'about', :title => 'About the Dog Walk Zombie Application', :navlabel => 'About', :position => 2,
                      :admin => false,
                      :body => '# This is the about us page')
    puts "#{p.title} page has been created"
-   p=Page.create(:name => 'resources', :title => 'Learning Rails Resources', :navlabel => 'Resources', :position => 3,
+   p=Page.create(:name => 'resources', :title => 'Dog Walk Zombie Resources', :navlabel => 'Resources', :position => 3,
                     :admin => false,
                     :body =>  "# Resources  ## More")
    puts "#{p.title} page has been created"
    p=Page.create(:name => 'contact', :title => 'Contact Us', :navlabel => 'Contact Us', :position => 4,
                     :admin => false,
-                    :body => "### At CairnBrain We always listen to our customers.  [Contact us here](/messages/new)")
+                    :body => "### At Dog Walk Zombie We always listen to our customers.  [Contact us here](/messages/new)")
    puts "#{p.title} page has been created"
    p=Page.create(:name => 'admin', :title => 'Administration', :navlabel => 'Admin', :position => 5,
                     :admin => true, 

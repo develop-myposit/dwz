@@ -10,7 +10,7 @@ end
 # you've limited to :test, :development, or :production.
 # Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-module Learn30
+module Dwz
   class Application < Rails::Application
     # enable asset pipeline
     config.assets.enabled = true

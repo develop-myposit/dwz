@@ -9,10 +9,10 @@ common: &common
 
 development:
   <<: *common
-  database: learn30_development
+  database: dwz_development
 test:
   <<: *common
-  database: learn30_test
+  database: dwz_test
 production:
   <<: *common
-  database: learn30_production
+  database: dwz_production

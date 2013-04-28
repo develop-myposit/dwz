@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title><%= @pagetitle %></title>
-    <meta name="title" content="Learn30 Test Application" />
+    <meta name="title" content="Dog Walk Zombie" />
     <meta name="description" content="Sample Rails Application" />
-    <meta name="author" content="paul" />
+    <meta name="author" content="develop" />
 
     <%= google_webfonts_link_tag :montserrat %>
     <%= stylesheet_link_tag 'application' %>
@@ -16,7 +16,7 @@
   <%= render 'layouts/navigation' %><br />
   <div id='pagewrapper'>
          <header>
-			<div class="banner"><%= link_to image_tag("learn30_header.jpg", alt: "Learning Rails Application"), root_path %></div>
+			<div class="banner"><%= link_to image_tag("dwz_header.jpg", alt: "Dog Walk Zombie"), root_path %></div>
          <nav>
 				<ul>
               <% @tabs.each do |page| -%>
@@ -32,7 +32,7 @@
       <%= yield %>
 		</div>
 		<footer>
-			<p>Learning Rails Sample Application</p>
+			<p>Dog Walk Zombie</p>
       </footer>
   </body>
 </html>

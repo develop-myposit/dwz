@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Learn30::Application.load_tasks
+Dwz::Application.load_tasks

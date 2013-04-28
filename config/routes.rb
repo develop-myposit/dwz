@@ -1,4 +1,4 @@
-Learn30::Application.routes.draw do
+Dwz::Application.routes.draw do
 
   resources :messages
 
