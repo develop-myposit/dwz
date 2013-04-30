@@ -14,6 +14,7 @@ group :development do
    gem "better_errors"
    gem "binding_of_caller"
    gem 'webrick', '~> 1.3.1'
+   gem 'capistrano'
 end
 
 group :assets do
@@ -24,10 +25,9 @@ end
 
 
 # Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
+group :production do
+   gem 'unicorn'
+end
 
 
 # Bundle the extra gems:
