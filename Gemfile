@@ -15,6 +15,7 @@ group :development do
    gem "binding_of_caller"
    gem 'webrick', '~> 1.3.1'
    gem 'capistrano'
+   gem 'cap-ssh-key-man'
 end
 
 group :assets do

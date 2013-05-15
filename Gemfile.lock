@@ -40,6 +40,7 @@ GEM
     binding_of_caller (0.7.1)
       debug_inspector (>= 0.0.1)
     builder (3.0.4)
+    cap-ssh-key-man (1.3.0)
     capistrano (2.15.4)
       highline
       net-scp (>= 1.0.0)
@@ -155,6 +156,7 @@ DEPENDENCIES
   best_in_place
   better_errors
   binding_of_caller
+  cap-ssh-key-man
   capistrano
   coffee-rails
   devise
