@@ -1,4 +1,4 @@
-root = "/home/dwz.com/apps/dwz/current"
+root = "/home/dwz/apps/dwz/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
