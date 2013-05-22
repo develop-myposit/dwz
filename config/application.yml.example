@@ -6,4 +6,4 @@ ADMIN_PASSWORD: changeme
 # Add application configuration variables here, as shown below.
 #
 MANDRILL_USERNAME: admin@cairnbrain.com
-MANDRILL_PASSWORD: 'WSVQwfCXJETLweM5L2pZDQ'
+MANDRILL_PASSWORD: 'ZbpuhIwDpIao3U3-M9V0EA'
